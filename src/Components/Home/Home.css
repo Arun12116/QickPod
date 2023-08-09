@@ -12,27 +12,28 @@
 
 .container-Body {
     display: flex;
-    justify-content: center;
+
     flex-direction: column;
     align-items: center;
 }
 
 .inpute-Area {
     display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  /* margin-left: 8rem; */
 
 }
 
-.twin-btn {
-    margin-top: 3.50rem;
-    margin-left: 1rem;
 
-}
 
 
 .inpute-Area input {
     width: 35vw;
     height: 8vh;
-    margin-top: 9%;
+    /* margin-top: 9%; */
     border: 3px solid black;
     text-align: center;
     border: none;
@@ -42,7 +43,7 @@
 }
 
 .card {
-    width: 40vw;
+    width: 45vw;
     height: 60vh;
     border: 2px solid rgb(33, 33, 119);
     margin-top: 5%;
