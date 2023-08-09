@@ -15,7 +15,7 @@ const Login = ({ setLoggin }) => {
 
     }
     return (
-        <Box display={"flex"} justifyContent={"center"} alignItems={"center"} width={"100%"} height={"100vh"}>
+        <Box display={"flex"} justifyContent={"center"} alignItems={"center"} w='100%' h='100vh'>
 
             <Box  boxShadow='dark-lg' p='6' rounded='md' bg='white' height={"25em"} >
             
