@@ -19,16 +19,13 @@
 
 .inpute-Area {
     display: flex;
-  gap: 2rem;
+  gap: 10px;
   justify-content: center;
   align-items: center;
   margin-top: 1rem;
-  /* margin-left: 8rem; */
+  
 
 }
-
-
-
 
 .inpute-Area input {
     width: 35vw;
@@ -40,7 +37,9 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 8px;
 
+
 }
+
 
 .card {
     width: 45vw;
@@ -106,7 +105,10 @@
 
 }
 
-
+.next{
+    display: flex;
+   align-items: center;
+}
 
 
  @media (max-width:1024px) {

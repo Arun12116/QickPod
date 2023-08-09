@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react'
 import "./Home.css"
 import axios from "axios"
-import { Button } from '@chakra-ui/react';
+import { Button ,ButtonGroup} from '@chakra-ui/react';
 const Home = () => {
 
     const [change, setChange] = useState("")
@@ -37,9 +37,12 @@ const Home = () => {
                         </div>
 
                         <div className='twin-btn'>
-                            <Button colorScheme='red' size={'lg'} >F</Button>
-                            <Button ml={"1em"} colorScheme='gray' size={'lg'}>C</Button>
+                        <ButtonGroup gap='1'>
+                        <Button colorScheme='red'  size={'lg'} >F</Button>
+                        <Button  colorScheme='gray'  size={'lg'}>C</Button>
 
+                      </ButtonGroup>
+                           
                         </div>
                     </div>
 
@@ -128,13 +131,16 @@ const Home = () => {
                         </div>
 
                     }
-                    <div className="next">
+                    {
+                        data.length===0?" ":<div className="next">
                         <Button my={2} colorScheme='red' size={'sm'}>prev</Button>
                         <Button ml={3} colorScheme='gray' size={'sm'}>Next</Button>
 
 
 
                     </div>
+                    }
+                    
                 </div>
 
 
