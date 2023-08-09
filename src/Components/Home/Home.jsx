@@ -44,7 +44,7 @@ const Home = () => {
                     </div>
 
                     {
-                        data.length == "" ? <h1>No Data Found</h1> : <div className="card">
+                        data.length === 0 ? <h1>No Data Found</h1> : <div className="card">
 
                             <div className="hello">
                                 <div className="upside">
