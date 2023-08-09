@@ -19,11 +19,11 @@
 
 .inpute-Area {
     display: flex;
-  gap: 10px;
-  justify-content: center;
-  align-items: center;
-  margin-top: 1rem;
-  
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+
 
 }
 
@@ -105,13 +105,13 @@
 
 }
 
-.next{
+.next {
     display: flex;
-   align-items: center;
+    align-items: center;
 }
 
 
- @media (max-width:1024px) {
+@media (max-width:1024px) {
     .inpute-Area input {
         width: 35rem;
         height: 3rem;
@@ -124,7 +124,7 @@
 
     }
 
-    
+
 
     .card {
         width: 90vw;
@@ -132,8 +132,8 @@
         padding: 1rem;
 
     }
-    
- }
+
+}
 
 @media (max-width:768px) {
 
@@ -149,7 +149,7 @@
 
     }
 
-    
+
 
     .card {
         width: 90vw;

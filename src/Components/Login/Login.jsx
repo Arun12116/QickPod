@@ -15,10 +15,7 @@ const Login = ({ setLoggin }) => {
 
     }
     return (
-        <div style={{
-            width: "100%", height: "100vh",
-            display: "flex", justifyContent: "center", alignItems: "center"
-        }}>
+        <Box display={"flex"} justifyContent={"center"} alignItems={"center"} width={"100%"} height={"100vh"}>
 
             <Box  boxShadow='dark-lg' p='6' rounded='md' bg='white' height={"25em"} >
             
@@ -37,7 +34,7 @@ const Login = ({ setLoggin }) => {
 
 
 
-        </div>
+        </Box>
     )
 }
 
