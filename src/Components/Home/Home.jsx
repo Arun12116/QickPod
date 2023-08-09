@@ -2,12 +2,13 @@
 import React, { useEffect, useState } from 'react'
 import "./Home.css"
 import axios from "axios"
-import { Button ,ButtonGroup} from '@chakra-ui/react';
+import { Button, ButtonGroup } from '@chakra-ui/react';
 const Home = () => {
 
     const [change, setChange] = useState("")
     const [data, setData] = useState([])
-    // console.log(data);
+    const [convert, setConvert] = useState(true)
+    console.log(data);
     // console.log(change);
 
     const API_KEY = '59871c751645408db4c33403230808';
@@ -23,7 +24,18 @@ const Home = () => {
 
     }, [change])
 
-    
+    const changeHandle = _ => {
+        setConvert(false)
+    }
+    const changeReverse = _ => {
+        // alert("hi")
+
+        setConvert(true)
+    }
+
+
+
+
     return (
         <>
             <div className="main_Conatiner">
@@ -37,12 +49,12 @@ const Home = () => {
                         </div>
 
                         <div className='twin-btn'>
-                        <ButtonGroup gap='1'>
-                        <Button colorScheme='red'  size={'lg'} >F</Button>
-                        <Button  colorScheme='gray'  size={'lg'}>C</Button>
+                            <ButtonGroup gap='1'>
+                                <Button colorScheme='red' size={'lg'} onClick={changeReverse} >F</Button>
+                                <Button colorScheme='gray' size={'lg'} onClick={changeHandle}>C</Button>
 
-                      </ButtonGroup>
-                           
+                            </ButtonGroup>
+
                         </div>
                     </div>
 
@@ -68,8 +80,14 @@ const Home = () => {
                                         <p>Wind:{data.current.wind_mph}mph</p>
                                         <p>Precip:{data.current.precip_in}in</p>
                                         <p>Pressure:{data.current.pressure_in}</p>
-                                        <p className='fara'>{data.current.temp_f
-                                        } F</p>
+                                        {
+                                            convert ? <p className='fara'>{data.current.temp_f
+                                            } F</p> : <p className='fara'>{data.current.temp_c
+
+                                            } C</p>
+
+
+                                        }
 
                                     </div>
 
@@ -88,34 +106,34 @@ const Home = () => {
                                         <div>
                                             <img src={data.current.condition.icon} alt="" srcset="" />
 
-                                            <p>36.f</p>
+                                            <p>{data.current.temp_f}.f</p>
 
                                         </div>
                                         <div>
                                             <img src={data.current.condition.icon} alt="" srcset="" />
 
 
-                                            <p>36.f</p>
+                                            <p>{data.current.temp_f}.f</p>
 
                                         </div>
                                         <div>
                                             <img src={data.current.condition.icon} alt="" srcset="" />
 
 
-                                            <p>36.f</p>
+                                            <p>{data.current.temp_f}.f</p>
 
                                         </div>
                                         <div>
                                             <img src={data.current.condition.icon} alt="" srcset="" />
 
 
-                                            <p>36.f</p>
+                                            <p>{data.current.temp_f}.f</p>
 
                                         </div>
                                         <div>
                                             <img src={data.current.condition.icon} alt="" srcset="" />
 
-                                            <p>36.f</p>
+                                            <p>{data.current.temp_f}.f</p>
                                         </div>
 
                                     </div>
@@ -132,15 +150,15 @@ const Home = () => {
 
                     }
                     {
-                        data.length===0?" ":<div className="next">
-                        <Button my={2} colorScheme='red' size={'sm'}>prev</Button>
-                        <Button ml={3} colorScheme='gray' size={'sm'}>Next</Button>
+                        data.length === 0 ? " " : <div className="next">
+                            <Button my={2} colorScheme='red' size={'sm'}>prev</Button>
+                            <Button ml={3} colorScheme='gray' size={'sm'}>Next</Button>
 
 
 
-                    </div>
+                        </div>
                     }
-                    
+
                 </div>
 
 
