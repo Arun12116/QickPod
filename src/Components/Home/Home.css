@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main_Conatiner {
+    width: 100%;
+    height: 100vh;
+    /* border: 2px solid red; */
+}
+
+.container-Body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inpute-Area {
+    display: flex;
+
+}
+
+.twin-btn {
+    margin-top: 3.50rem;
+    margin-left: 1rem;
+
+}
+
+
+.inpute-Area input {
+    width: 40rem;
+    height: 4rem;
+    margin-top: 3rem;
+    border: 3px solid black;
+    text-align: center;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 8px;
+
+}
+
+.card {
+    width: 50vw;
+    height: 60vh;
+    border: 2px solid rgb(33, 33, 119);
+    margin-top: 5rem;
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.temp-wth-imge {
+    text-align: center;
+
+}
+
+
+.heading {
+    display: flex;
+    gap: 1rem;
+
+}
+
+
+
+.upside {
+    display: flex;
+    justify-content: space-around;
+    /* border: 2px solid red; */
+}
+
+.down-Side {
+    margin-top: 10rem;
+    /* border: 2px solid rgb(97, 68, 68); */
+
+}
+
+.right-Side {
+    font-size: 1.2rem;
+
+
+}
+
+.right-Side p {}
+
+.right-Side .fara {
+    font-weight: bold;
+    font-size: 1.50rem;
+}
+
+.temp {
+    display: flex;
+    justify-content: space-around;
+}
+
+.temp-wth-imge {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+
+}
+
+
+@media (max-width:768px) {
+
+    .inpute-Area input {
+        width: 35rem;
+        height: 3rem;
+
+    }
+
+    .twin-btn {
+        margin-top: 3.50rem;
+        margin-left: 1rem;
+
+    }
+
+    
+
+    .card {
+        width: 90vw;
+        height: 80vh;
+        padding: 1rem;
+
+    }
+
+}
+
+@media (max-width:425px) {
+    .inpute-Area input {
+        width: 20rem;
+        height: 3rem;
+
+    }
+
+    .twin-btn {
+        margin-top: 3.50rem;
+        margin-left: 1rem;
+
+    }
+
+    .inpute-Area {
+
+        flex-direction: column;
+
+    }
+
+    .card {
+        width: 90vw;
+        height: 80vh;
+        padding: 1rem;
+
+    }
+
+}
+
+
+@media (max-width:375px) {
+
+    .inpute-Area input {
+        width: 18rem;
+        height: 3rem;
+
+    }
+
+    .twin-btn {
+        margin-top: 3.50rem;
+        margin-left: 1rem;
+
+    }
+
+    .inpute-Area {
+
+        flex-direction: column;
+
+    }
+
+    .card {
+        width: 90vw;
+        height: 80vh;
+        padding: 1rem;
+
+    }
+
+}
+
+
+
+@media (max-width:320px) {
+    .inpute-Area input {
+        width: 18rem;
+        height: 3rem;
+
+    }
+
+    .twin-btn {
+        margin-top: 3.50rem;
+        margin-left: 1rem;
+
+    }
+
+    .inpute-Area {
+
+        flex-direction: column;
+
+    }
+
+    .card {
+        width: 90vw;
+        height: 80vh;
+        padding: 1rem;
+
+    }
+
+
+
+}
