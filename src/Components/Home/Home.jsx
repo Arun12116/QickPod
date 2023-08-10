@@ -106,34 +106,69 @@ const Home = () => {
                                         <div>
                                             <img src={data.current.condition.icon} alt="" srcset="" />
 
-                                            <p>{data.current.temp_f}.f</p>
+                                            {
+                                                convert ? <p className='fara'>{data.current.temp_f
+                                                } F</p> : <p className='fara'>{data.current.temp_c
+    
+                                                } C</p>
+    
+    
+                                            }
 
                                         </div>
                                         <div>
                                             <img src={data.current.condition.icon} alt="" srcset="" />
 
 
-                                            <p>{data.current.temp_f}.f</p>
+                                            {
+                                                convert ? <p className='fara'>{data.current.temp_f
+                                                } F</p> : <p className='fara'>{data.current.temp_c
+    
+                                                } C</p>
+    
+    
+                                            }
 
                                         </div>
                                         <div>
                                             <img src={data.current.condition.icon} alt="" srcset="" />
 
 
-                                            <p>{data.current.temp_f}.f</p>
+                                            {
+                                                convert ? <p className='fara'>{data.current.temp_f
+                                                } F</p> : <p className='fara'>{data.current.temp_c
+    
+                                                } C</p>
+    
+    
+                                            }
 
                                         </div>
                                         <div>
                                             <img src={data.current.condition.icon} alt="" srcset="" />
 
 
-                                            <p>{data.current.temp_f}.f</p>
+                                            {
+                                                convert ? <p className='fara'>{data.current.temp_f
+                                                } F</p> : <p className='fara'>{data.current.temp_c
+    
+                                                } C</p>
+    
+    
+                                            }
 
                                         </div>
                                         <div>
                                             <img src={data.current.condition.icon} alt="" srcset="" />
 
-                                            <p>{data.current.temp_f}.f</p>
+                                            {
+                                                convert ? <p className='fara'>{data.current.temp_f
+                                                } F</p> : <p className='fara'>{data.current.temp_c
+    
+                                                } C</p>
+    
+    
+                                            }
                                         </div>
 
                                     </div>
